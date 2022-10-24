@@ -1,8 +1,5 @@
-def print_board(board):
-    print('-------------')
-    for i in range(3):
-        print('|', board[i * 3], '|', board[1 + i * 3], '|', board[2 + i * 3], '|')
-        print ('-------------')
+board = range(1,10)
+board = list(map(str, board))
        
 def move_player(sign):
     check = False
@@ -28,8 +25,7 @@ def control_win(board):
             return board[item[0]]
     return False
    
-board = range(1,10)
-board = list(map(str, board))
+
 
 count = 0
 win = False
